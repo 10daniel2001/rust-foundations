@@ -8,13 +8,17 @@
 
 // Declarando uma funçao main, funçâo principal em rust
 fn main() {
-    let idade = 25;
+    let iidade = 25;
     // Idade e um inteiro de 32 bits aútomatico, mas o valor nao pode ser alterado esta fixado, mas é uma variavel presente na stack
-    idade = 99;
+    //idade = 99;
     // Certamente é um erro 
     // Ao compilar ou ao tentar compilar será gerando mensagens de erro
 
     // JEITO CORRETO
 
-     
+    let mut year = 2026;
+
+    year = 2027;
+
+    println!("{year}"); 
 }
