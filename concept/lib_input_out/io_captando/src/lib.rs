@@ -11,4 +11,7 @@ pub fn input() -> String{
 
 pub fn io_i32() {
     let mut entrada = String::new();
+    io::stdin().read_line(&mut entrada).expect("Erro de numero");
+    let entrada: i32 = entrada.trim().parse().expect("Erro de saida");
+
 }
