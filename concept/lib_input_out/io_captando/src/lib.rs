@@ -22,3 +22,18 @@ pub fn io_i32() -> i32 {
 
     _eentrada
 }
+
+pub fn io_char() -> char {
+    let mut _entrada = String::new();
+    io::stdin().read_line(&mut _entrada).expect("Erro de entrada");
+   
+    let character = match _entrada.trim().chars().next() {
+        Some(c) => c,
+        None => {
+            println!("ERRO nenhum caracter");
+            ' '
+        }
+    };
+
+    character
+}
