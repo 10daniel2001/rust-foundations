@@ -8,3 +8,7 @@ pub fn input() -> String{
 
     entrada.to_string()
 }
+
+pub fn io_i32() {
+    let mut entrada = String::new();
+}
