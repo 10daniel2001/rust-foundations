@@ -9,9 +9,10 @@ pub fn input() -> String{
     entrada.to_string()
 }
 
-pub fn io_i32() {
+pub fn io_i32() -> i32 {
     let mut entrada = String::new();
     io::stdin().read_line(&mut entrada).expect("Erro de numero");
-    let entrada: i32 = entrada.trim().parse().expect("Erro de saida");
+    let _eentrada: i32 = entrada.trim().parse().expect("Erro de saida");
 
+    _eentrada
 }
