@@ -6,6 +6,7 @@ Estou últilizando um arquivo lib
 
 
 use iocaptando::{input, io_i32};
+// Notém este use chamando a lib e suas funçoes 
 
 
 fn main() {

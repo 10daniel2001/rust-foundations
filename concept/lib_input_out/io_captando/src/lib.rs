@@ -12,7 +12,13 @@ pub fn input() -> String{
 pub fn io_i32() -> i32 {
     let mut entrada = String::new();
     io::stdin().read_line(&mut entrada).expect("Erro de numero");
-    let _eentrada: i32 = entrada.trim().parse().expect("Erro de saida");
+    let _eentrada = match entrada.trim().parse() {
+        Ok(numero) => numero,
+        Err(_) => {
+            println!("Erro ao associar numero");
+            0
+        }
+    };
 
     _eentrada
 }
