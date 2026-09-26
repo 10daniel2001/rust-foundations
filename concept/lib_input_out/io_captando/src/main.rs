@@ -1,11 +1,12 @@
 
 /*Estou criando uma forma de captar às entradas em rust de uma forma simples
 Estou últilizando um arquivo lib
+E este arquivo main 
 
 */
 
 
-use iocaptando::{input, io_i32, io_char};
+use iocaptando::{input, io_i32, io_char, io_valor};
 // Notem  este "use" chamando a lib e suas funçoes 
 
 
@@ -24,4 +25,8 @@ fn main() {
     println!("Digite um caracter");
     let caracters = io_char();
     println!("Seu caracter e {caracters}");
+
+
+    let _teste: i32 = io_valor("Digite um numero");
+    println!("O número e {}", _teste);
 }

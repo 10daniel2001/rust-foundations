@@ -1,4 +1,7 @@
 use std::io;
+use std::str::FromStr;
+use std::fmt::Debug;
+
 
 
 pub fn input() -> String{
@@ -36,4 +39,18 @@ pub fn io_char() -> char {
     };
 
     character
+}
+
+//*****************************************************************************************
+// A BAIXO ESTA UMA FUNÇAO DIFERNETE ONDE NAO SABEMOS O TYPE DO DADOS /
+//
+pub fn io_valor<T: FromStr>(mensagem: &str) -> T
+where
+    T::Err: Debug,
+{
+    let mut entrada = String::new();
+    println!("{}", mensagem);
+    io::stdin().read_line(&mut entrada).expect("Erro de leitura");
+
+    entrada.trim().parse().expect("Entrada inválida")
 }
