@@ -63,4 +63,9 @@ where
     io::stdin().read_line(&mut entrada).expect("Erro de leitura");
 
     entrada.trim().parse().expect("Entrada inválida")
+    
+    // A função io_valor é uma função genérica que lê uma linha de entrada do usuário,
+    // exibe uma mensagem de prompt e tenta converter a entrada para um tipo T especificado.
+    // O tipo T deve implementar o trait FromStr, que permite a conversão de uma string para o tipo desejado.
+    // Se a conversão falhar, a função imprime uma mensagem de erro e encerra o programa.
 }
