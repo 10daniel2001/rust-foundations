@@ -17,7 +17,7 @@ fn main(){
 // Free automáticamente após o sim da chave 
 
 
-
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Move 
 let dadoss = String::from("Olá mundo"); 
 // Aqui a um espaço heap com os dados string 
@@ -32,5 +32,17 @@ let s3 = dadoss;
 
  // println!("{}", dadoss); // Erro 
 println!("{}", s3);
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+let your = String::from("Carlos daniel");
+let my = your.clone();
+
+println!("{}", your); // Funciona corretamente 
+println!("{}", my); // funciona corretamente 
+
+// Clone() Copiou os dados de your, mas estes dados nao estao no memso espaço de memoria 
+// Clone() copiou e allocou e atribuiu a o ponteiro my
+// Os dados sao os mesmo mas o espaco onde cada um está é diferente 
 
 }
