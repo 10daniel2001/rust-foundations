@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+members = [
+    "concept/mutavel",
+    "concept/lib_input_out/io_captando",
+    "data_structures/struct_1",
+]
