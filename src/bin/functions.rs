@@ -14,6 +14,10 @@ fn multiplicar(a: f32, b: f32) -> f32{
     a * b
 }
 
+fn dividir(a: usize, b: usize) -> usize{
+   return a / b
+}
+
 
 
 fn main() {
@@ -22,4 +26,7 @@ fn main() {
 
     let res_multi = multiplicar(2.0, 10.0);
     println!("resultado de * é = {:?}", res_multi);
+
+    let divisao = dividir(300, 20);
+    println!("Resultado da divisao e {}", divisao);
 }
