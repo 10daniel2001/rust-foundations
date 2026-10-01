@@ -14,8 +14,14 @@ fn multiplicar(a: f32, b: f32) -> f32{
     a * b
 }
 
+// Está funçao de divisao e apenas didatíca, nâo e a certa para está operaçâo
 fn dividir(a: usize, b: usize) -> usize{
    return a / b
+}
+
+fn subtrair(a: i32, b: i32) -> i32{
+    a - b
+    //sem dois ponto no final 
 }
 
 
@@ -29,4 +35,7 @@ fn main() {
 
     let divisao = dividir(300, 20);
     println!("Resultado da divisao e {}", divisao);
+
+    let subtrair = subtrair(5, 50);
+    println!("Resultado da subtraçao e {}", subtrair);
 }
